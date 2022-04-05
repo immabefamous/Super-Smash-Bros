@@ -19,8 +19,13 @@
   height: 100px;
   width: 100px;
   background-color: red;
+  transition: 0.3s;
+  background-size: cover;
+  border: 5px solid transparent;
 }
 
 .fighter:hover {
   transform: scale(1.1);
+  cursor: pointer;
+  border: 5px solid white;
 }
