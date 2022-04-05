@@ -1,5 +1,6 @@
 import './App.css';
 import Fighter from './components/Fighter';
+import FighterScreen from './components/FighterScreen'
 
 function App() {
   return (
@@ -9,7 +10,10 @@ function App() {
       <Fighter name={'Roy'} color={'red'} />
       <Fighter name={'Fox'} color={'green'} />
       <Fighter name={'Ganondorf'} color={'purple'} />
+      <Fighter name={'Sheik'} color={'lightskyblue'} />
       </div>
+      <FighterScreen />
+
     </div>
   );
 }

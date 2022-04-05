@@ -22,10 +22,19 @@
   transition: 0.3s;
   background-size: cover;
   border: 5px solid transparent;
+  background-repeat: no-repeat;
 }
 
 .fighter:hover {
   transform: scale(1.1);
   cursor: pointer;
   border: 5px solid white;
+}
+
+.fighter-screen {
+  background-color: #fff;
+  border: 1px solid blue;
+  width: 50%;
+  position: fixed;
+  bottom: 0;
 }
