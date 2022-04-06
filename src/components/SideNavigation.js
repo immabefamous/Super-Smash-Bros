@@ -1,18 +1,17 @@
-
-
-const SideNavigation = ({characters, isVisible}) => {
+const SideNavigation = ({ isVisible, characters, setSelectedCharacter }) => {
     return(
-        <div className="side-nav" style={{ display: isVisible ? "blcok" : "none" }}>
-            {
-            characters.map((character) => {
-                return(
-                    <div>
-                        <p>{character.name}</p>
-                    </div>
-                )
-            })
+      <nav className="side-nav" style={{ display: isVisible ? "block" : "none" }}>
+        {
+          characters.map((character) => {
+            return(
+              <div className="char-nav" onClick={() => { setSelectedCharacter({name: character.name, color: character.color}) }}>
+                <img src={`https://www.smashbros.com/assets_v2/img/fighter/thumb_a/${character.name.toLowerCase()}.png`} />
+              </div>
+            )
+          })
         }
-        </div>
+      </nav>
     )
-}
-export default SideNavigation;
+  }
+  
+  export default SideNavigation;
