@@ -9,7 +9,7 @@ const characters = [
   {name:'Ganondorf', color: 'purple'},
   {name:'Sheik', color: 'lightskyblue'},
   {name:'Cloud', color: 'green'},
-  {name:'Samus', color: 'firered'},
+  {name:'Byleth', color: 'firered'},
   {name:'Falco', color: 'blue'},
   {name:'Link', color: 'yellow'}
 
